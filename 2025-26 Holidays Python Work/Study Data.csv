@@ -1,0 +1,42 @@
+subject,time,difficulty
+['science',34, 2.0]
+['math',30, 2.0]
+['humanities',45, 5.0]
+['math',80, 4.0]
+['math',80, 4.0]
+['math',80, 4.0]
+['english',20, 1.0]
+['english',30, 1.0]
+['humanities',30, 2.0]
+['math',35, 3.0]
+['math',60, 3.0]
+['science',30, 1.0]
+['math',39, 2.0]
+['math',30, 2.0]
+['science',20, 1.0]
+['math',45, 3.0]
+['science',3, 2.0]
+['math', 20, 4.0]
+['science', 329, 4.0]
+['humanities', 30, 2.0]
+['math', 30, 2.0]
+['math', 30, 32.0]
+['english', 59, 2.0]
+math,45,3.0
+humanities,3,2.0
+math,45,2.0
+science,30,2.0
+humanities,60,4.0
+math,3,1.0
+math,45,2.0
+english,45,2.0
+math,45,2.0
+science,60,2.0
+math,45,2.0
+math,45,2.0
+math,45,3.0
+math,12,5.0
+math,60,4.0
+math,60,5.0
+english,-88,8.0
+math,45,2.0
