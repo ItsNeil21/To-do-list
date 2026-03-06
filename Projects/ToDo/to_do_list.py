@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 from datetime import datetime
+st.session_state.clear()
 # File path for CSV
 filepath = "To_Do.csv"
 
