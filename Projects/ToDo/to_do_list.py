@@ -39,8 +39,10 @@ today = datetime.today()
 df["Days_Left"] = df["Days_Due_In"]
 
 df["Status"] = df["Days_Left"].apply(
-    lambda x: "Overdue"
+    lambda x: "Overdue" if x < 0 else "Due Date Soon"
 )
+if df["Days_Left"].min() < 0:
+    st.warning("You have overdue tasks!")
 # Section to delete a task
 st.subheader("Delete A Task")
 if not df.empty:
