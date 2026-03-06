@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-
+import datetime
 # File path for CSV
 filepath = "To_Do.csv"
 
@@ -34,7 +34,13 @@ if st.button("Add Task"):
         st.success("Task added!")
     else:
         st.error("Enter a task name and a number for Days Due In.")
+today = datetime.today()
 
+df["Days_Left"] = (pd.to_datetime(df["Due_Date"]) - today).dt.days
+
+df["Status"] = df["Days_Left"].apply(
+    lambda x: "Overdue"
+)
 # Section to delete a task
 st.subheader("Delete A Task")
 if not df.empty:
