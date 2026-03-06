@@ -1,6 +1,11 @@
 import pandas as pd
 import streamlit as st
 from datetime import datetime
+import os
+
+# Force Streamlit to start with an empty dataframe
+if os.path.exists("To_Do.csv"):
+    os.remove("To_Do.csv")
 st.session_state.clear()
 # File path for CSV
 filepath = "To_Do.csv"
