@@ -36,7 +36,7 @@ if st.button("Add Task"):
         st.error("Enter a task name and a number for Days Due In.")
 today = datetime.today()
 
-df["Days_Left"] = (pd.to_datetime(df["Due_Date"]) - today).dt.days
+df["Days_Left"] = df["Days_Due_In"]
 
 df["Status"] = df["Days_Left"].apply(
     lambda x: "Overdue"
